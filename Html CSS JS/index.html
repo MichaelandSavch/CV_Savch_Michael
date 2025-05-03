@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме — Михайло Савчак</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>МИХАЙЛО САВЧАК</h1>
+            <h2>студент</h2>
+            <p class="contact">
+                +380 (63) 989 89 51<br>
+                Email: <a href="mailto:michaelandsavch@gmail.com">michaelandsavch@gmail.com</a>
+            </p>
+            <label>
+                <input type="checkbox" id="themeToggle"> Нічний режим
+            </label>
+        </header>
+
+        <section>
+            <h3>НАВИЧКИ</h3>
+            <ul class="skills">
+                <li>Комунікабельність</li>
+                <li>Відкритість до нових можливостей</li>
+                <li>Вміння працювати в команді</li>
+                <li>Уважність</li>
+                <li>Швидке навчання</li>
+                <li>Початковий рівень англійської мови (продовжую вивчати)</li>
+                <li>Організованість</li>
+                <li>Пунктуальність</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>ПРО СЕБЕ</h3>
+            <p>
+                Я студент Національного університету «Львівська політехніка». Без досвіду роботи.
+                Володіючи страстю до навчання та розвитку, я завжди прагну відкривати нові горизонти та здобувати знання.
+                Моє бажання вчитися й розвиватися відображається в моїй наполегливості.
+            </p>
+            <p>
+                У вільний час я навчаюся, покращуючи свої навички і розвиваючись як розумово, так і фізично, а також духовно.
+                Стараюся ставати кращим кожного дня.
+            </p>
+        </section>
+
+        <section>
+            <h3>ОСВІТА</h3>
+            <p>
+                ЗЗСО І-ІІ ст. с.П’ятниця.<br>
+                Закінчивши школу з хорошим середнім балом, я поступив до державного коледжу.
+            </p>
+            <p>
+                Технологічний фаховий коледж НУ "Львівська політехніка".<br>
+                Захистив диплом на відмінно по темі: «Розробка універсального Інтернет-магазину».
+            </p>
+            <p>
+                Після закінчення коледжу я поступив до НУ "Львівська політехніка",
+                де зараз навчаюсь на другому курсі факультету Кібербезпеки (заочно).
+            </p>
+        </section>
+
+        <section>
+            <h3>ЗАХОПЛЕННЯ</h3>
+            <p>Навчання, особистісний розвиток, спорт, духовне вдосконалення.</p>
+        </section>
+
+        <section>
+            <h3>Коментарі з API</h3>
+            <div id="comments"></div>
+        </section>
+    </div>
+
+    <footer id="footer-info"></footer>
+
+    <!-- Модальне вікно -->
+    <div id="modal">
+        <form action="https://formspree.io/f/xjkwypbl" method="POST">
+            <input type="text" name="name" placeholder="Ім’я" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="tel" name="phone" placeholder="Телефон"><br>
+            <textarea name="message" placeholder="Ваше повідомлення" required></textarea><br>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
